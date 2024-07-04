@@ -1,0 +1,33 @@
+apiVersion: v1
+entries:
+  item-relationship-service:
+  - apiVersion: v2
+    appVersion: 5.2.0
+    created: "2024-07-04T08:36:09.694467091Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.min.io/
+      version: 5.0.1
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 17.0.1
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.44.8
+    description: Tractus-X Item Relationship Service Helm Chart
+    digest: f0fa9d35ab0247dbd8afd144c5c4fbd68216ed2803d5c4518d3b3f5501af72ab
+    home: https://eclipse-tractusx.github.io/
+    name: item-relationship-service
+    sources:
+    - https://github.com/eclipse-tractusx/item-relationship-service
+    type: application
+    urls:
+    - https://github.com/poojapatel23/item-relationship-service/releases/download/item-relationship-service-7.2.0/item-relationship-service-7.2.0.tgz
+    version: 7.2.0
+generated: "2024-07-04T08:36:09.694476338Z"
